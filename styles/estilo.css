@@ -154,7 +154,7 @@ main {
     margin-bottom: 15px;
 }
 
-.boton-fino {
+.boton {
     display: block;
     text-align: center;
     background-color: #DAC2A6;
@@ -165,7 +165,7 @@ main {
     padding: 5px 10px;
 }
 
-a:hover .boton-fino {
+a:hover .boton {
     background-color: #624D37;
     transition: 0.5s;
 }
@@ -177,7 +177,7 @@ a:hover .boton-fino {
 
 
 aside {
-    background-color: cornflowerblue;
+    border: 1px dashed orange;
     grid-area: aside;
 }
 
