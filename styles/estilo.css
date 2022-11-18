@@ -169,12 +169,10 @@ a:hover .boton {
     background-color: #624D37;
     transition: 0.5s;
 }
-
-
-
-
 /** end MAIN */
 
+
+/** Componentes del ASIDE */
 
 aside {
     border: 1px dashed orange;
