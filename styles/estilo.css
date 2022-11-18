@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Noto Sans', sans-serif;
+
+    
+    max-width: 60vw; /* = 60% */
+    margin: 0 auto; /* centrar a la página */
+    /* justify-content: center; */
+    /*min-height: 100vh; /*PRUEBAS. LUEGO ELIMINAR*/
+
+    /* maquetación de la página*/
+    display: grid;
+    grid-template-areas:    "header header"
+                            "main aside" 
+                            "footer footer";
+    grid-template-columns: 65% 35%;
+}
+
+h3 {
+    padding: 20px 0;
+    color: #624D37;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+/** Componentes dentro del HEADER **/
+
+header {
+    grid-area: header;
+}
+
+#logo img {
+    display: block;
+    margin:0 auto;
+    padding: 10px 0;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.navbar {
+    display:flex;
+    position: relative;
+}
+nav {
+    font-size: 0.8rem;
+    background-color: #F1F0F0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+}
+
+nav a {
+    padding: 0.8rem;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F1F0F0;
+    background-color: #707070;
+    transition: 0.5s;
+}
+
+.menu {
+    flex: 100%;
+}
+
+.idioma {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.checked {
+    background-color: #707070;
+    color: #F1F0F0;
+}
+/* ------------------- */
+
+
+.banner {
+    position: relative;
+}
+.banner img {
+    display: block;
+    width: 100%;
+}
+.banner h2 {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+/** END HEADER */
+
+/** MAIN */
+main {
+    grid-area: main;
+    margin: 0 20px;
+}
+
+.productos {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.productos article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 33%;
+}
+
+.productos article:nth-child(even) {
+    margin: 0 8px;
+}
+
+.img-producto {
+    display: block;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.boton-fino {
+    display: block;
+    text-align: center;
+    background-color: #DAC2A6;
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+a:hover .boton-fino {
+    background-color: #624D37;
+    transition: 0.5s;
+}
+
+
+
+
+/** end MAIN */
+
+
+aside {
+    background-color: cornflowerblue;
+    grid-area: aside;
+}
+
+footer {
+    background-color: #624d37;
+    grid-area: footer;
+    
+    min-height: 10vh;
+}
