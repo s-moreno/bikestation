@@ -22,13 +22,16 @@ body {
     grid-template-columns: 65% 35%;
 }
 
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
 h3 {
     padding: 20px 0;
     color: #624D37;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.1rem;
-    text-align: center;
 }
 
 p {
@@ -76,7 +79,7 @@ header {
 }
 
 nav {
-    font-size: 0.9rem;
+    font-size: .9rem;
 
 }
 
@@ -178,13 +181,67 @@ a:hover .boton {
 /** Componentes del ASIDE */
 
 aside {
-    border: 1px dashed orange;
     grid-area: aside;
+
 }
+
+aside h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.form-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-aside-item {
+    font-size: .9rem;
+    border: 0px;
+    border-radius: 8px;
+    margin: 4px 60px;
+    padding-left: 8px;
+}
+
+.form-aside-item:focus {
+    border:1px solid #DAC2A6;
+    outline: none !important;
+}
+
+.fondo-gris {
+    background-color: #F1F0F0;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.form-registro-aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.form-registro-aside label {
+    font-size: .8rem;
+    padding-right: 20px;
+}
+
+.form-registro-aside button {
+    font-size: .85rem;
+    display: inline;
+    text-align: center;
+    background-color: #624D37;
+    color: white;
+    border: 0px;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 15px 8px;
+}
+
 
 footer {
     background-color: #624d37;
     grid-area: footer;
-    
     min-height: 10vh;
 }
