@@ -70,8 +70,8 @@
             <div class="form-aside">
                 <input type="text" name="nombre" placeholder="Nombre" class="form-aside-item">
                 <input type="text" name="apellidos" placeholder="Apellidos" class="form-aside-item">
-                <input type="text" name="email" placeholder="Email" class="form-aside-item">
-                <input type="text" name="password" placeholder="Password" class="form-aside-item">
+                <input type="email" name="email" placeholder="Email" class="form-aside-item">
+                <input type="password" name="password" placeholder="Password" class="form-aside-item">
             </div>
             <div class="form-aside fondo-gris">
                 <h4>Datos envío</h4>
@@ -87,7 +87,44 @@
         </form>
     </aside>
     <footer>
-        <h1>FOOTER</h1>
+        <section class="footer-contact">
+            <h5>Contacta con nosotros</h5>
+            <p><a href="index.html">www.bikestation.com</a> <span>&#8226;</span> <a href="mailto:info@bikestation.com">info@bikestation.com</a></p>
+            <form>
+                <div class="fila-form">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname"  name="nombre">
+                </div>
+                <div class="fila-form">
+                    <label for="lname">Apellidos</label>
+                    <input type="text" id="lname" name="apellidos">
+                </div>
+                <div class="fila-form">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail"  name="email">
+                </div>
+                <div class="fila-form">
+                    <label for="comment">Comentarios</label>
+                    <textarea id="comment" rows="5" name="comentarios"></textarea>
+                </div>
+                <div class="registrar">
+                    <div class="checkbox">
+                        <input type="checkbox" id="ckbox2" value="acept"><label for="ckbox2">Acepto el aviso legal</label>
+                    </div>
+                    <button class="boton" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <section class="footer-map">
+            <h5>Localización</h5>
+            <p>Araba Kalea, 41, 01006 barnekaldea, Araba</p>
+            <img class="mapa" src="/images/localizacion.jpg" alt="mapa dirección tienda">
+            <div class="redes-sociales">
+                <a href="#"><img src="/images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="/images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="/images/instagram.png" alt="instagram"></a>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

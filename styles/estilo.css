@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap');
 
 html {
-    font-size:14px;
+    font-size: 14px;
 }
 
 body {
     background-color: #FFFFFF;
     font-family: 'Noto Sans', sans-serif;
-
+    max-width: 60vw;
+    margin: 0 auto;
     
-    max-width: 60vw; /* = 60% */
-    margin: 0 auto; /* centrar a la página */
-    /* justify-content: center; */
-    /*min-height: 100vh; /*PRUEBAS. LUEGO ELIMINAR*/
-
     /* maquetación de la página*/
     display: grid;
-    grid-template-areas:    "header header"
-                            "main aside" 
-                            "footer footer";
+    grid-template-areas: "header header"
+        "main aside"
+        "footer footer";
     grid-template-columns: 65% 35%;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 h3 {
@@ -31,7 +34,16 @@ h3 {
     color: #624D37;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    color: white;
+    font-weight: bold;
 }
 
 p {
@@ -55,17 +67,17 @@ header {
 
 #logo img {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 10px 0;
 }
 
 /* MENÚ DE NAVEGACIÓN */
 .navbar {
-    display:flex;
+    display: flex;
     position: relative;
     background-color: #F1F0F0;
     overflow: hidden;
-    
+
 }
 
 .menu {
@@ -104,22 +116,24 @@ nav li a:hover {
     background-color: #707070;
     color: #F1F0F0;
 }
+
 /* ------------------- */
 
 
 .banner {
     position: relative;
 }
+
 .banner img {
     display: block;
     width: 100%;
 }
+
 .banner h2 {
     position: absolute;
     bottom: 15px;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
     font-weight: bolder;
     color: #FFFFFF;
     text-shadow: 3px 3px 5px #000000;
@@ -175,10 +189,10 @@ a:hover .boton {
     background-color: #624D37;
     transition: 0.5s;
 }
-/** end MAIN */
 
-
-/** Componentes del ASIDE */
+/* end MAIN */
+/**************/
+/* Componentes del ASIDE */
 
 aside {
     grid-area: aside;
@@ -186,7 +200,6 @@ aside {
 }
 
 aside h4 {
-    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -204,7 +217,7 @@ aside h4 {
 }
 
 .form-aside-item:focus {
-    border:1px solid #DAC2A6;
+    border: 1px solid #DAC2A6;
     outline: none !important;
 }
 
@@ -239,9 +252,109 @@ aside h4 {
     padding: 15px 8px;
 }
 
+/* end ASIDE */
+/**************/
+/* Componentes del FOOTER */
 
 footer {
-    background-color: #624d37;
     grid-area: footer;
-    min-height: 10vh;
+    background-color: #908983;
+    display: flex;
+
+}
+
+footer section {
+    padding: 25px 40px 0 40px;
+}
+
+footer p {
+    padding: 20px 0;
+    color: #DAC2A6;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer span {
+    color: white;
+}
+
+.footer-contact {
+    flex-basis: 55%;
+}
+
+.fila-form {
+    display: flex;
+    justify-content:space-between;
+    margin: 0 40px 6px 0;
+    font-size: .8rem;
+}
+
+.fila-form label {
+    flex-basis: 20%;
+    color: white;
+}
+
+.fila-form input, textarea {
+    flex: 1;
+    border-radius: 10px;
+    border: 0px;
+    resize: none;
+    font-size: .8rem;
+    padding-left: 8px;
+}
+
+.registrar {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    color: white;
+    font-size: .8rem;
+}
+
+.boton:hover {
+    background-color: #624D37;
+    transition: 0.5s;
+}
+
+.footer-map {
+    flex-basis: 45%;
+}
+
+.mapa {
+    display: block;
+    border-radius: 10px;
+    object-fit: fill;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+.redes-sociales a {
+    opacity: .5;
+}
+
+.redes-sociales a:hover {
+    opacity: 1;
+}
+
+.redes-sociales img {
+    width: 50%;
 }
