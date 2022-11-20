@@ -29,7 +29,7 @@ html {
 body {
     background-color: #FFFFFF;
     font-family: 'Noto Sans', sans-serif;
-    max-width: 60vw;
+    max-width: 60%;
     margin: 0 auto;
 
     /* maquetación de la página*/
@@ -394,6 +394,7 @@ textarea {
 
 @media only screen and (min-width: 991px) and (max-width: 1400px) { 
     body {
+        max-width: 80%;
         display: flex;
         flex-direction: column;
         grid-template-areas: "header header"
@@ -409,7 +410,7 @@ textarea {
     }
 
     nav {
-        font-size: .6rem;
+        font-size: .8rem;
     }
 
     /* ASIDE */
