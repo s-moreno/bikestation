@@ -32,12 +32,8 @@ body {
     max-width: 60%;
     margin: 0 auto;
 
-    /* maquetación de la página*/
-    display: grid;
-    grid-template-areas: "header header"
-        "main aside"
-        "footer footer";
-    grid-template-columns: 65% 35%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1,
@@ -86,7 +82,7 @@ a {
 **/
 
 header {
-    grid-area: header;
+    flex-basis: 100%;
 }
 
 /* 2.1.- Logo */
@@ -169,8 +165,8 @@ nav li a:hover {
     3.- MAIN 
 */
 main {
-    grid-area: main;
     margin: 0 20px;
+    flex: 1 0 55%;
 }
 
 /* 3.1.- Productos */
@@ -223,8 +219,7 @@ a:hover .boton {
 */
 
 aside {
-    grid-area: aside;
-
+    flex: auto;
 }
 
 aside h4 {
@@ -284,10 +279,9 @@ aside h4 {
 /* 5.- FOOTER */
 
 footer {
-    grid-area: footer;
+    flex: auto;
     background-color: #908983;
     display: flex;
-
 }
 
 footer section {
@@ -392,16 +386,10 @@ textarea {
 
 /* MEDIA QUERIES*/
 
-@media only screen and (min-width: 991px) and (max-width: 1400px) { 
+@media only screen and (min-width: 991px) and (max-width: 1500px) { 
     body {
         max-width: 80%;
         display: flex;
-        flex-direction: column;
-        grid-template-areas: "header header"
-        "main"
-        "aside"
-        "footer footer";
-        grid-template-columns: 65% 35%;
     }
     
     /* MENÚ */
