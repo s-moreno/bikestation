@@ -74,6 +74,10 @@ a {
     text-align: center;
 }
 
+.negrita {
+    font-weight: bold;
+}
+
 /** 
     2.- HEADER
 **/
@@ -157,6 +161,11 @@ nav li a:hover {
 }
 
 /* 2.4.- Breadcrumb */
+.breadcrumb {
+    background-color: #F1F0F0;
+    padding: 2px 0;
+    font-size: .9rem;
+}
 
 /* 
     3.- MAIN 
@@ -172,8 +181,6 @@ main {
 }
 
 /* 3.1.- Productos */
-
-
 .productos {
     margin: 30px 0;
     display: flex;
@@ -183,7 +190,7 @@ main {
 }
 
 .margin-5 {
-    margin: 30px 5%;   
+    margin: 30px 5%;
 }
 
 .productos article {
