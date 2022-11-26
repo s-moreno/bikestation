@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    
+    <title>Contáctanos | bikestation.com</title>
+</head>
+<body>
+    <!-- HEADER: logo, menús, banner, breadcrumb -->
+    <header>
+        <div id="logo">
+            <img src="/images/logotipo.png" alt="logotipo tienda" width="100px">
+        </div>
+        <section class="navbar">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="realizar-pedido.html">REALIZAR PEDIDO</a></li>
+                    <li><a class="checked" href="contactar.html">CONTÁCTANOS</a></li>
+                </ul>
+            </nav>
+            <nav class="idioma">
+                <ul>
+                    <li><a href="#">ES</a></li>
+                    <li><a href="#">EU</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="banner">
+            <img src="/images/cabecera-cinco.jpg" alt="imagen del torso de un ciclista">
+            <h2>CONTÁCTANOS</h2>
+        </div>
+        <section class="breadcrumb centrar-texto">
+            <span>Inicio / </span><span class="negrita">Contáctanos</span>
+        </section>
+    </header>
+    <main class="margin-10">
+        <h3>CONTACTA CON NOSOTROS</h3>
+        <p class="p-contact centrar-texto padding-none"><a href="index.html">www.bikestation.com</a> <span class="black">&#8226;</span> <a href="mailto:info@bikestation.com">info@bikestation.com</a></p>
+        <section class="form-contacta center">
+            <form class="fondo-gris">
+                <div class="form-aside">
+                    <input type="text" name="nombre" placeholder="Nombre" class="form-aside-item fmi-margin-short">
+                    <input type="text" name="apellidos" placeholder="Apellidos" class="form-aside-item fmi-margin-short">
+                    <input type="email" name="email" placeholder="Email" class="form-aside-item fmi-margin-short">
+                    <textarea name="comentario" rows="15" placeholder="Escribe aquí tu comentario" class="form-aside-item fmi-margin-long"></textarea>
+                </div>
+                <div class="form-enviar fmi-margin-long">
+                    <div class="conjunto-aceptar">
+                        <input type="checkbox" id="ckbox3" value="acept"><label for="ckbox3">Acepto el aviso legal</label>
+                    </div>
+                    <button class="boton expand" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-contact">
+            <h5>Contacta con nosotros</h5>
+            <p class="p-contact"><a href="index.html">www.bikestation.com</a> <span class="white">&#8226;</span> <a href="mailto:info@bikestation.com">info@bikestation.com</a></p>
+            <form>
+                <div class="fila-form">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname"  name="nombre">
+                </div>
+                <div class="fila-form">
+                    <label for="lname">Apellidos</label>
+                    <input type="text" id="lname" name="apellidos">
+                </div>
+                <div class="fila-form">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail"  name="email">
+                </div>
+                <div class="fila-form">
+                    <label for="comment">Comentarios</label>
+                    <textarea id="comment" rows="5" name="comentarios"></textarea>
+                </div>
+                <div class="registrar">
+                    <div class="checkbox">
+                        <input type="checkbox" id="ckbox2" value="acept"><label for="ckbox2">Acepto el aviso legal</label>
+                    </div>
+                    <button class="boton" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <section class="footer-map">
+            <h5>Localización</h5>
+            <p class="p-contact">Araba Kalea, 41, 01006 barnekaldea, Araba</p>
+            <img class="mapa" src="/images/localizacion.jpg" alt="mapa dirección tienda">
+            <div class="redes-sociales">
+                <a href="#"><img src="/images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="/images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="/images/instagram.png" alt="instagram"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
