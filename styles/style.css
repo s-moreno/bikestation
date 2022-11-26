@@ -645,3 +645,9 @@ textarea {
         width: 75%;
     }
 }
+
+@media screen and (min-width: 2750px) {
+    body {
+        flex-direction: column;
+    }
+}
