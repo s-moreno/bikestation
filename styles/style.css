@@ -89,6 +89,10 @@ a {
     color: black;
 }
 
+.marron {
+    color: #624D37;
+}
+
 /** 
     2.- HEADER
 **/
@@ -643,11 +647,5 @@ textarea {
 
     .redes-sociales img {
         width: 75%;
-    }
-}
-
-@media screen and (min-width: 2750px) {
-    body {
-        flex-direction: column;
     }
 }
