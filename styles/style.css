@@ -291,11 +291,11 @@ main {
 .boton {
     display: block;
     text-align: center;
+    font-size: 0.9rem;
     background-color: #DAC2A6;
     color: white;
     border: 0px;
     border-radius: 20px;
-    cursor: pointer;
     padding: 5px 10px;
 }
 
