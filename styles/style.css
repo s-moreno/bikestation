@@ -551,12 +551,13 @@ textarea {
 .redes-sociales {
     display: flex;
     justify-content: space-around;
-    padding: 0 100px; 
+    padding: 0 100px;
 }
 
 .redes-sociales a {
     opacity: .5;
     text-align: center;
+    cursor: pointer;
 }
 
 .redes-sociales a:hover {
@@ -564,8 +565,8 @@ textarea {
 }
 
 .redes-sociales img {
-    width: 50%;
-    height: auto;
+    width: 50%; 
+    height: auto;   
 }
 
 /* MEDIA QUERIES*/
