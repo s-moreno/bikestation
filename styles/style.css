@@ -269,6 +269,10 @@ main {
     margin-left: 20px;
 }
 
+.texto div{
+    display: flex;
+}
+
 .img-producto {
     display: block;
     border-radius: 10px;
@@ -291,6 +295,7 @@ main {
 .boton {
     display: block;
     text-align: center;
+    font-size: 0.9rem;
     background-color: #DAC2A6;
     color: white;
     border: 0px;
@@ -327,8 +332,9 @@ a:hover .boton {
 .conjunto-aceptar {
     display: flex;
     align-items: center;
-    font-size: .8rem;
     justify-content: space-between;
+    padding-right: 10px;
+    font-size: .8rem;
 }
 
 .expand {
@@ -459,7 +465,7 @@ aside h4 {
 /* 5.- FOOTER */
 
 footer {
-    flex: auto;
+    flex: 100%;
     background-color: #908983;
     display: flex;
 }
@@ -550,6 +556,8 @@ textarea {
 
 .redes-sociales a {
     opacity: .5;
+    text-align: center;
+    cursor: pointer;
 }
 
 .redes-sociales a:hover {
@@ -557,7 +565,8 @@ textarea {
 }
 
 .redes-sociales img {
-    width: 50%;
+    width: 50%; 
+    height: auto;   
 }
 
 /* MEDIA QUERIES*/
@@ -666,6 +675,15 @@ textarea {
         object-fit: fill;
         width: 100%;
     }
+
+    .form-contacta {
+        width: 100%;
+    }
+    .form-enviar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     /* ASIDE */
     .form-registro-aside {
         flex-direction: column;
@@ -678,7 +696,17 @@ textarea {
 
     /* FOOTER */
     footer {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-contact {
+        flex-basis: 100%;
+    }
+
+    .footer-map {
+        flex-basis: 100%;
     }
 
     .fila-form {
