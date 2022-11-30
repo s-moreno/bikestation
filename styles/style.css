@@ -363,11 +363,28 @@ table {
 }
 .pedido td, th {
     vertical-align: middle;
+    padding-right: 10px;
 }
 
 .pedido td > img {
-    width: 40%;
-    border-radius: 10px;
+    width: 35%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.boton-pedido{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 20px 10px;
+    font-size: .9rem;
+    
+}
+
+.derecha {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 20px;
 }
 
 .descripcion {
