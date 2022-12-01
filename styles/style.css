@@ -620,7 +620,9 @@ textarea {
     }
 
     .menu {
-        flex: auto;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: flex-end;
     }
 
     .idioma {
@@ -652,7 +654,7 @@ textarea {
     }
 
     nav li a:hover {
-        padding: 0px 0;
+        padding: 0px 5px;
         transition: 0s;
     }
 
